@@ -1,0 +1,54 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0;
+  background: #6c63ff;
+  height: 100vh;
+}
+
+.inner {
+  padding: 1em;
+  width: 250px;
+  border-radius: 10px;
+  background: #06d19c;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #000;
+}
+
+.inner:hover span {
+  color: #000;
+}
+
+.inner span {
+  color: #fff;
+  float: right;
+  font-weight: bolder;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin: 0 10px 0 0;
+}
+
+.inner h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.inner p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=main.css.map */

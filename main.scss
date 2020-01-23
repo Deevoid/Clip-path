@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    background: #6c63ff;
+    height: 100vh;
+}
+
+    .inner{
+        padding: 1em;
+        width: 250px;
+        border-radius: 10px;
+        background: #06d19c;
+        clip-path: circle(10% at 90% 20%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            clip-path: circle(75%);
+            background: #000;
+        }
+        &:hover{
+            span{
+                color: #000;
+            }
+        }
+        span{
+            color: #fff;
+            float: right;
+            font-weight: bolder;
+            transition: color .5s;
+            position: relative;
+            margin: 0 10px 0 0;
+        }
+
+        h1{
+            color: #fff;
+            margin: 0;
+
+        }
+        p{
+            color: #fff;
+            font-size: 0.8rem;
+        }
+    }
+
